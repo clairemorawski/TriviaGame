@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>US State Captials Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<header>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>US State Capitals Trivia Game</h1>
+            <img src="https://wh1k8zidop.inscname.net/games/images/1452819604_Find_the_US_State_Capitals"
+                alt="headerImg" width="100%" class="img-responsive">
+        </div>
+</header>
+
+<body>
+    <div class='container'>
+        <button class='btn btn-primary' id='startBtn'>Start</button>
+        <!-- Question page -->
+        <div id=timeLeft></div>
+        <div id=currentQuestion></div>
+        <div class='question'></div>
+        <div class='answerList'></div>
+        <!-- Answer Page -->
+        <div id=message></div>
+        <div id=correctedAnswer></div>
+        <!-- Scoreboard -->
+        <div id=finalMessage></div>
+        <div id=correctAnswers></div>
+        <div id=incorrectAnswers></div>
+        <div id=unanswered></div>
+        <div id='startOverBtn'></div>
+        <div class="rules">
+            <h3>Rules:
+                Based on each question, choose the correct answer from the list of multiple choice options.
+                Users have 15 seconds to finish each trivia question.
+                The game ends when the time runs out.
+                The page will reveal the number of questions the user answers correctly and incorrectly.
+                The page will also reveal the user's score.</h3>
+        </div>
+</body>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="Assets/javascript/app.js">
+    renderButtons();
+
+</script>
+
+</html>
